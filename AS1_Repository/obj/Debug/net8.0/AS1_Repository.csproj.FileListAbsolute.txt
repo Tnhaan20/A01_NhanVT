@@ -15,3 +15,4 @@ D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_Repository\obj\Deb
 D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_Repository\obj\Debug\net8.0\refint\AS1_Repository.dll
 D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_Repository\obj\Debug\net8.0\AS1_Repository.pdb
 D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_Repository\obj\Debug\net8.0\ref\AS1_Repository.dll
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_Repository\obj\Debug\net8.0\AS1_Repository.sourcelink.json

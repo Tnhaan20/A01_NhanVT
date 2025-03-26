@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\NhanVT_MVC.csproj": {}
+    "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_MVC\\NhanVT_MVC.csproj": {}
   },
   "projects": {
     "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_BusinessModel\\AS1_BusinessModel.csproj": {
@@ -239,14 +239,14 @@
         }
       }
     },
-    "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\NhanVT_MVC.csproj": {
+    "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_MVC\\NhanVT_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\NhanVT_MVC.csproj",
+        "projectUniqueName": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_MVC\\NhanVT_MVC.csproj",
         "projectName": "NhanVT_MVC",
-        "projectPath": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\NhanVT_MVC.csproj",
+        "projectPath": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_MVC\\NhanVT_MVC.csproj",
         "packagesPath": "C:\\Users\\nhanv\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\obj\\",
+        "outputPath": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

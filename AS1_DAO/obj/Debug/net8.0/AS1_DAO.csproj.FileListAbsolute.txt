@@ -13,3 +13,4 @@ D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8
 D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\refint\AS1_DAO.dll
 D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\AS1_DAO.pdb
 D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\ref\AS1_DAO.dll
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\AS1_DAO.sourcelink.json

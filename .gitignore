@@ -1,0 +1,74 @@
+# --------------------------------
+# Hệ điều hành và IDE
+# --------------------------------
+
+# Các file liên quan đến hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.vsp
+*.vspx
+*.dbmdl
+*.dbdump
+Backup*/
+*.opendb
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# --------------------------------
+# Xây dựng và phân phối
+# --------------------------------
+
+# Thư mục /bin & /obj
+[Bb]in/
+[Oo]bj/
+
+# File tạm thời của MSBuild
+*.Resources.targets
+
+# Các file tạm do NuGet sinh ra
+*.nupkg
+packages/
+# Nếu đang dùng NuGet PackageReference, thư mục /packages sẽ có thể cần bỏ qua
+
+# File tạm của MSBuild
+*.msbuild.csproj.*
+
+# --------------------------------
+# .NET
+# --------------------------------
+
+# Lưu trữ user secrets, không nên commit
+**/secrets.json
+
+# File lock của dự án .NET (nếu có)
+project.lock.json
+project.assets.json
+
+# --------------------------------
+# Khác
+# --------------------------------
+
+# Log, phân tích, tạm
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+*.orig
+*.swp
+*.swo
+*.tmp
+
+# Node modules (nếu có frontend)
+node_modules/

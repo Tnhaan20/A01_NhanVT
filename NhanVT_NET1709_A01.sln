@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhanVT_MVC", "NhanVT_Assignment1\NhanVT_MVC.csproj", "{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhanVT_MVC", "NhanVT_MVC\NhanVT_MVC.csproj", "{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AS1_BusinessModel", "AS1_BusinessModel\AS1_BusinessModel.csproj", "{D3F3E8D8-7A9B-4A12-84C6-CDB231DB27FF}"
 EndProject
