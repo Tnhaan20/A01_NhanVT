@@ -6,28 +6,29 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AS1_BusinessModel;
+using AS1_Repository;
 
 namespace NhanVT_Assignment1.Pages.CategoryPage
 {
     public class DetailsModel : PageModel
     {
-        private readonly AS1_BusinessModel.FunewsManagementContext _context;
+        private readonly ICategoriesRepo _context;
 
-        public DetailsModel(AS1_BusinessModel.FunewsManagementContext context)
+        public DetailsModel(ICategoriesRepo context)
         {
             _context = context;
         }
 
         public Category Category { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(short? id)
+        public async Task<IActionResult> OnGetAsync(short id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var category = await _context.Categories.FirstOrDefaultAsync(m => m.CategoryId == id);
+            var category = _context.GetCategoryId(id);
             if (category == null)
             {
                 return NotFound();

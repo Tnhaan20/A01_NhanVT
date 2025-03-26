@@ -23,5 +23,8 @@ namespace AS1_Repository
 
         public bool isInUsed(short cateId);
 
+        public void UpdateNewsArticleTags(string newsArticleId, List<int> tagIds);
+
+
     }
 }

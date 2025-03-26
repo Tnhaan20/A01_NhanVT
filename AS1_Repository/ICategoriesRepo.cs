@@ -12,7 +12,6 @@ namespace AS1_Repository
     {
         public List<Category> getAllCategories();
 
-        public List<object> GetList();
 
         public Category GetCategoryId(short id);
 
@@ -21,5 +20,7 @@ namespace AS1_Repository
         public void UpdateCategory(Category a);
 
         public void DeleteCategory(short id);
+
+        public List<object> GetCategoryList();
     }
 }

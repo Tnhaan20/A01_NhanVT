@@ -48,7 +48,11 @@
                             @Html.DisplayFor(modelItem => item.CategoryDesciption)
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.IsActive)
+                            @if(item.IsActive == true){
+                                <text>Active</text>
+                            } else {
+                                <text>Inactive</text>
+                            }
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.ParentCategory.CategoryDesciption)

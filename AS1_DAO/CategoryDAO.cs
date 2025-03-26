@@ -87,7 +87,18 @@ namespace AS1_DAO
             }
         }
 
-        
+
+        public List<object> GetCategoryList()
+        {
+            return _dbcontext.Categories
+                .Select(c => new
+                {
+                    Value = c.CategoryId.ToString(),
+                    Text = c.CategoryName.ToString()
+                })
+                .ToList<object>();
+        }
+
 
 
 

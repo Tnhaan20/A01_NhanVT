@@ -58,9 +58,8 @@ namespace NhanVT_Assignment1.Pages
             HttpContext.Session.SetInt32("RoleId", account.AccountRole.Value);
             HttpContext.Session.SetInt32("AccountId", account.AccountId);
 
-            if (account.AccountRole.Value == 1)
-                return RedirectToPage("/CategoryPage/Index");
-            else if (account.AccountRole.Value == 2)
+            if (account.AccountRole.Value == 1 || account.AccountRole.Value == 2)
+                
                 return RedirectToPage("/NewsArticlePage/Index");
             else
                 return RedirectToPage("/Unauthorized");

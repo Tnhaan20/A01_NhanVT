@@ -7,6 +7,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<INewsArticleRepository, NewsArticleRepository>();
 builder.Services.AddScoped<ICategoriesRepo, CategoriesRepo>();
+builder.Services.AddScoped<ITagRepo, Tag_Repo>();
 
 
 builder.Services.AddSession();

@@ -13,16 +13,20 @@ namespace NhanVT_Assignment1.Pages.NewsArticlePage
     public class IndexModel : PageModel
     {
         private readonly INewsArticleRepository _context;
+        private readonly IAccountRepository _accountContext;
+        private readonly ITagRepo _tagRepo;
 
-        public IndexModel(INewsArticleRepository context)
+        public IndexModel(INewsArticleRepository context, IAccountRepository accountContext, ITagRepo tagRepo)
         {
             _context = context;
+            _accountContext = accountContext;
+            _tagRepo = tagRepo;
         }
 
-        public IList<NewsArticle> NewsArticle { get;set; } = default!;
-
+        public IList<NewsArticle> NewsArticle { get; set; } = default!;
         public string Email { get; set; } = default!;
-       
+        public Dictionary<int, string> UpdatedByNames { get; set; } = new Dictionary<int, string>();
+        public Dictionary<string, List<string>> ArticleTagNames { get; set; } = new Dictionary<string, List<string>>();
 
         public IActionResult OnGet()
         {
@@ -38,6 +42,38 @@ namespace NhanVT_Assignment1.Pages.NewsArticlePage
             }
             
             NewsArticle = _context.GetNewsArticles();
+
+            // Get account names for updaters
+            foreach (NewsArticle article in NewsArticle)
+            {
+                if (article.UpdatedById.HasValue)
+                {
+                    var account = _accountContext.GetAccountById(article.UpdatedById.Value);
+                    if (account != null)
+                    {
+                        UpdatedByNames[article.UpdatedById.Value] = account.AccountName;
+                    }
+                    else
+                    {
+                        UpdatedByNames[article.UpdatedById.Value] = "Unknown";
+                    }
+                }
+
+                var tagNames = new List<string>();
+                if (article.Tags != null && article.Tags.Any())
+                {
+                    foreach (var tag in article.Tags)
+                    {
+                        var tagDetails = _tagRepo.GetTagsId(tag.TagId);
+                        if (tagDetails != null)
+                        {
+                            tagNames.Add(tagDetails.TagName); // Add the tag name to the list
+                        }
+                    }
+                    ArticleTagNames[article.NewsArticleId] = tagNames;
+                }
+            }
+            
             return Page();
         }
     }

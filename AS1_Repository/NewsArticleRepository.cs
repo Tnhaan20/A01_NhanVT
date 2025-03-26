@@ -26,5 +26,8 @@ namespace AS1_Repository
         public void UpdateNews(NewsArticle news) => NewsArticleDAO.Instance.Update(news);
 
         public bool isInUsed(short cateId) => NewsArticleDAO.Instance.isInUsed(cateId);
+
+        public void UpdateNewsArticleTags(string newsArticleId, List<int> tagIds) => NewsArticleDAO.Instance.UpdateArticleTags(newsArticleId, tagIds);
+
     }
 }

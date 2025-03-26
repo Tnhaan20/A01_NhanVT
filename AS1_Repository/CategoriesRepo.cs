@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AS1_BusinessModel;
 using AS1_DAO;
+using Microsoft.EntityFrameworkCore;
 
 namespace AS1_Repository
 {
@@ -18,8 +19,9 @@ namespace AS1_Repository
 
         public Category GetCategoryId(short id)=> CategoryDAO.Instance.GetCategoryId(id);
 
-        public List<object> GetList() => CategoryDAO.Instance.GetSelectList();
 
         public void UpdateCategory(Category a) => CategoryDAO.Instance.UpdateCategory(a);
+
+        public List<object> GetCategoryList() => CategoryDAO.Instance.GetCategoryList();
     }
 }

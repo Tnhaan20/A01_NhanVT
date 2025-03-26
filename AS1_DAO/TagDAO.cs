@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AS1_BusinessModel;
+using Azure;
+using Microsoft.EntityFrameworkCore;
 
 namespace AS1_DAO
 {
@@ -30,6 +32,54 @@ namespace AS1_DAO
             }
         }
 
+
+        public Tag GetTagsId(int id)
+        {
+            return _dbContext.Tags
+        .AsNoTracking()
+        .SingleOrDefault(a => a.TagId == id);
         
+        }
+
+        public List<Tag> GetAllTag()
+        {
+            return _dbContext.Tags
+                .ToList();
+        }
+
+        public void Add(Tag tag)
+        {
+            Tag cur = GetTagsId(tag.TagId);
+            if (cur != null)
+            {
+                throw new Exception();
+            }
+            _dbContext.Tags.Add(tag);
+            _dbContext.SaveChanges();
+        }
+
+        public void Update(Tag tag)
+        {
+            Tag cur = GetTagsId(tag.TagId);
+            if (cur == null)
+            {
+                throw new Exception();
+            }
+            _dbContext.Entry(cur).CurrentValues.SetValues(tag);
+            _dbContext.SaveChanges();
+        }
+
+        public void Delete(int id)
+        {
+            Tag cur = GetTagsId(id);
+            if (cur != null)
+            {
+                _dbContext.Tags.Remove(cur);
+                _dbContext.SaveChanges(); // Delete the object
+            }
+        }
+
+
+
     }
 }

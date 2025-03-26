@@ -69,8 +69,26 @@
             @Html.DisplayNameFor(model => model.NewsArticle.CreatedBy)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.NewsArticle.CreatedBy.AccountEmail)
+            @Html.DisplayFor(model => model.NewsArticle.CreatedBy.AccountName)
         </dd>
+        <dt class="col-sm-2">
+    Tags
+</dt>
+<dd class="col-sm-10">
+    @if (Model.TagNames.Any())
+    {
+        <div class="d-flex flex-wrap gap-1">
+            @foreach (var tag in Model.TagNames)
+            {
+                <span class="badge bg-info text-dark">@tag</span>
+            }
+        </div>
+    }
+    else
+    {
+        <span>No tags</span>
+    }
+</dd>
     </dl>
 </div>
 <div>
