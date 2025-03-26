@@ -2,103 +2,131 @@
 @model NhanVT_Assignment1.Pages.NewsArticlePage.DetailsModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Article Details";
 }
 
-<h1>Details</h1>
-
-<div>
-    <h4>NewsArticle</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.NewsArticle.NewsTitle)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.NewsArticle.NewsTitle)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.NewsArticle.Headline)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.NewsArticle.Headline)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.NewsArticle.CreatedDate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.NewsArticle.CreatedDate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.NewsArticle.NewsContent)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.NewsArticle.NewsContent)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.NewsArticle.NewsSource)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.NewsArticle.NewsSource)
-        </dd>
-                <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.NewsArticle.NewsStatus)
-        </dt>
-        <dd class="col-sm-10">
-            @if (Model.NewsArticle.NewsStatus == true)
-            {
-                <span class="badge bg-success">Active</span>
-            }
-            else
-            {
-                <span class="badge bg-danger">Inactive</span>
-            }
-        </dd>
-                <dt class="col-sm-2">
-            Updated By
-        </dt>
-        <dd class="col-sm-10">
-            @Model.UpdatedByName
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.NewsArticle.ModifiedDate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.NewsArticle.ModifiedDate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.NewsArticle.Category)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.NewsArticle.Category.CategoryDesciption)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.NewsArticle.CreatedBy)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.NewsArticle.CreatedBy.AccountName)
-        </dd>
-        <dt class="col-sm-2">
-    Tags
-</dt>
-<dd class="col-sm-10">
-    @if (Model.TagNames.Any())
-    {
-        <div class="d-flex flex-wrap gap-1">
-            @foreach (var tag in Model.TagNames)
-            {
-                <span class="badge bg-info text-dark">@tag</span>
-            }
+<div class="container my-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-black text-white d-flex justify-content-between align-items-center">
+            <h2 class="mb-0">@Model.NewsArticle.NewsTitle</h2>
+            <span class="ms-2">
+                @if (Model.NewsArticle.NewsStatus == true)
+                {
+                    <span class="badge bg-success">Active</span>
+                }
+                else
+                {
+                    <span class="badge bg-danger">Inactive</span>
+                }
+            </span>
         </div>
-    }
-    else
-    {
-        <span>No tags</span>
-    }
-</dd>
-    </dl>
-</div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.NewsArticle.NewsArticleId">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+        
+        <div class="card-body">
+            <div class="mb-4">
+                <h5 class="font-weight-bold text-muted">@Model.NewsArticle.Headline</h5>
+            </div>
+
+            <!-- Meta information -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="d-flex mb-2">
+                        <span class="text-secondary me-2"><i class="bi bi-person"></i> Author:</span>
+                        <span class="fw-bold">
+                            @if (Model.NewsArticle.CreatedBy != null)
+                            {
+                                @Model.NewsArticle.CreatedBy.AccountName
+                            }
+                            else
+                            {
+                                <span>Unknown</span>
+                            }
+                        </span>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <span class="text-secondary me-2"><i class="bi bi-calendar"></i> Published:</span>
+                        <span>@(Model.NewsArticle.CreatedDate.HasValue ? Model.NewsArticle.CreatedDate.Value.ToString("dd/MM/yyyy") : "N/A")</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex mb-2">
+                        <span class="text-secondary me-2"><i class="bi bi-pencil"></i> Updated by:</span>
+                        <span>@(string.IsNullOrEmpty(Model.UpdatedByName) ? "N/A" : Model.UpdatedByName)</span>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <span class="text-secondary me-2"><i class="bi bi-clock"></i> Last modified:</span>
+                        <span>@(Model.NewsArticle.ModifiedDate.HasValue ? Model.NewsArticle.ModifiedDate.Value.ToString("dd/MM/yyyy, HH:mm") : "N/A")</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category and Tags -->
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="text-secondary me-2"><i class="bi bi-folder"></i> Category:</span>
+                        <span class="badge bg-primary">
+                            @if (Model.NewsArticle.Category != null)
+                            {
+                                @Model.NewsArticle.Category.CategoryDesciption
+                            }
+                            else
+                            {
+                                <span>Uncategorized</span>
+                            }
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center flex-wrap">
+                        <span class="text-secondary me-2"><i class="bi bi-tags"></i> Tags:</span>
+                        @if (Model.TagNames != null && Model.TagNames.Any())
+                        {
+                            <div class="d-flex flex-wrap gap-1">
+                                @foreach (var tag in Model.TagNames)
+                                {
+                                    <span class="badge bg-info text-dark">@tag</span>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <span>No tags</span>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="content-section p-3 bg-light rounded mb-4">
+                <h5 class="border-bottom pb-2 mb-3">Article Content</h5>
+                <div class="article-content">
+                    @Html.Raw(Model.NewsArticle.NewsContent ?? "No content available")
+                </div>
+            </div>
+
+            <!-- Source -->
+            <div class="mb-3">
+                <h6 class="text-secondary"><i class="bi bi-link"></i> Source:</h6>
+                <p class="ps-3">
+                    @if (string.IsNullOrEmpty(Model.NewsArticle.NewsSource))
+                    {
+                        <span class="fst-italic">No source provided</span>
+                    }
+                    else
+                    {
+                        <a href="@Model.NewsArticle.NewsSource" target="_blank">@Model.NewsArticle.NewsSource</a>
+                    }
+                </p>
+            </div>
+        </div>
+        
+        <div class="card-footer">
+            <div class="d-flex gap-2">
+                <a asp-page="./Edit" asp-route-id="@Model.NewsArticle.NewsArticleId" class="btn btn-primary">
+                    <i class="bi bi-pencil-square"></i> Edit
+                </a>
+                <a asp-page="./Index" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left"></i> Back to List
+                </a>
+            </div>
+        </div>
+    </div>
 </div>

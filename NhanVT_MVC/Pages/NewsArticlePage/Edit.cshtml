@@ -2,96 +2,179 @@
 @model NhanVT_Assignment1.Pages.NewsArticlePage.EditModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit News Article";
 }
 
-<h1>Edit News Article</h1>
+<div class="container my-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-warning text-dark d-flex align-items-center">
+            <i class="bi bi-pencil-square me-2 fs-4"></i>
+            <h2 class="mb-0">Edit News Article</h2>
+        </div>
 
-<hr />
-<div class="row">
-    <div class="col-md-8">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="NewsArticle.NewsArticleId" />
-            <input type="hidden" asp-for="NewsArticle.CreatedDate" />
-            <input type="hidden" asp-for="NewsArticle.CreatedById" />
-            
-            <div class="form-group mb-3">
-                <label asp-for="NewsArticle.NewsTitle" class="control-label"></label>
-                <input asp-for="NewsArticle.NewsTitle" class="form-control" />
-                <span asp-validation-for="NewsArticle.NewsTitle" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group mb-3">
-                <label asp-for="NewsArticle.Headline" class="control-label"></label>
-                <input asp-for="NewsArticle.Headline" class="form-control" />
-                <span asp-validation-for="NewsArticle.Headline" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group mb-3">
-                <label class="control-label">Created By</label>
-                <input class="form-control" value="@Model.CreatorName" readonly />
-            </div>
-            
-            <div class="form-group mb-3">
-                <label class="control-label">Created Date</label>
-                <input class="form-control" value="@(Model.NewsArticle.CreatedDate)" readonly />
-            </div>
-            
-            <div class="form-group mb-3">
-                <label asp-for="NewsArticle.CategoryId" class="control-label"></label>
-                <select asp-for="NewsArticle.CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
-                <span asp-validation-for="NewsArticle.CategoryId" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group mb-3">
-                <label asp-for="NewsArticle.NewsContent" class="control-label"></label>
-                <textarea asp-for="NewsArticle.NewsContent" class="form-control" rows="10"></textarea>
-                <span asp-validation-for="NewsArticle.NewsContent" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group mb-3">
-                <label asp-for="NewsArticle.NewsSource" class="control-label"></label>
-                <input asp-for="NewsArticle.NewsSource" class="form-control" />
-                <span asp-validation-for="NewsArticle.NewsSource" class="text-danger"></span>
-            </div>
-            
-            <div class="form-group mb-3">
-                <label asp-for="NewsArticle.NewsStatus" class="control-label"></label>
-                <select asp-for="NewsArticle.NewsStatus" class="form-control">
-                    <option value="true">Active</option>
-                    <option value="false">Inactive</option>
-                </select>
-                <span asp-validation-for="NewsArticle.NewsStatus" class="text-danger"></span>
-            </div>
-            
-            <!-- Editable Tags using checkboxes -->
-            <!-- Make sure the tag checkboxes have the name and value attributes set correctly: -->
-            <div class="form-group mb-3">
-                <label class="control-label">Tags</label>
-                <div class="p-3 border rounded d-flex flex-wrap">
-                    @foreach (var tag in Model.AllTags)
-                    {
-                        bool isSelected = Model.SelectedTagIds.Contains(tag.TagId);
-                        
-                        <div class="form-check form-check-inline mb-2">
-                            <input type="checkbox" 
-                                id="tag_@tag.TagId" 
-                                name="SelectedTagIds" 
-                                value="@tag.TagId" 
-                                class="form-check-input" 
-                                @(isSelected ? "checked" : "") />
-                            <label for="tag_@tag.TagId" class="form-check-label">@tag.TagName</label>
+        <div class="card-body">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                <input type="hidden" asp-for="NewsArticle.NewsArticleId" />
+                <input type="hidden" asp-for="NewsArticle.CreatedDate" />
+                <input type="hidden" asp-for="NewsArticle.CreatedById" />
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <!-- Article Content -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Basic Information</h5>
+                                <span class="badge bg-secondary">ID: @Model.NewsArticle.NewsArticleId</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label asp-for="NewsArticle.NewsTitle" class="form-label fw-bold">Title <span class="text-danger">*</span></label>
+                                    <input asp-for="NewsArticle.NewsTitle" class="form-control form-control-lg" required />
+                                    <span asp-validation-for="NewsArticle.NewsTitle" class="text-danger"></span>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label asp-for="NewsArticle.Headline" class="form-label fw-bold">Headline <span class="text-danger">*</span></label>
+                                    <input asp-for="NewsArticle.Headline" class="form-control" required />
+                                    <span asp-validation-for="NewsArticle.Headline" class="text-danger"></span>
+                                    <div class="form-text">A concise summary that appears in search results</div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label asp-for="NewsArticle.NewsContent" class="form-label fw-bold">Content <span class="text-danger">*</span></label>
+                                    <textarea asp-for="NewsArticle.NewsContent" class="form-control" style="min-height: 300px;" required></textarea>
+                                    <span asp-validation-for="NewsArticle.NewsContent" class="text-danger"></span>
+                                </div>
+                            </div>
                         </div>
-                    }
+
+                        <!-- Source Information -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-light">
+                                <h5 class="mb-0">Source Information</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label asp-for="NewsArticle.NewsSource" class="form-label fw-bold">Source</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-link"></i></span>
+                                        <input asp-for="NewsArticle.NewsSource" class="form-control" placeholder="URL or reference to original source" />
+                                    </div>
+                                    <span asp-validation-for="NewsArticle.NewsSource" class="text-danger"></span>
+                                    <div class="form-text">If this article references external content, please include the original source.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Creation Information -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-light">
+                                <h5 class="mb-0">Article History</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Created By</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                            <input class="form-control bg-light" value="@Model.CreatorName" readonly />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Created Date</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                                            <input class="form-control bg-light" value="@(Model.NewsArticle.CreatedDate?.ToString("dd/MM/yyyy HH:mm") ?? "Unknown")" readonly />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <!-- Status & Classification -->
+                        <div class="card mb-4 sticky-top" style="top: 10px; z-index: 100;">
+                            <div class="card-header bg-light">
+                                <h5 class="mb-0">Status & Classification</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-4">
+                                    <label asp-for="NewsArticle.NewsStatus" class="form-label fw-bold">Status <span class="text-danger">*</span></label>
+                                    <div class="d-flex gap-3">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="statusActive" name="NewsArticle.NewsStatus" value="true" @(Model.NewsArticle.NewsStatus == true ? "checked" : "") />
+                                            <label class="form-check-label" for="statusActive">
+                                                <span class="badge bg-success">Active</span> - Visible to users
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="statusInactive" name="NewsArticle.NewsStatus" value="false" @(Model.NewsArticle.NewsStatus != true ? "checked" : "") />
+                                            <label class="form-check-label" for="statusInactive">
+                                                <span class="badge bg-danger">Inactive</span> - Hidden from users
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label asp-for="NewsArticle.CategoryId" class="form-label fw-bold">Category <span class="text-danger">*</span></label>
+                                    <select asp-for="NewsArticle.CategoryId" class="form-select" asp-items="ViewBag.CategoryId" required>
+                                        <option value="">-- Select Category --</option>
+                                    </select>
+                                    <span asp-validation-for="NewsArticle.CategoryId" class="text-danger"></span>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold">Tags</label>
+                                    <div class="p-3 border rounded bg-light d-flex flex-wrap gap-2" style="max-height: 200px; overflow-y: auto;">
+                                        @foreach (var tag in Model.AllTags)
+                                        {
+                                            bool isSelected = Model.SelectedTagIds.Contains(tag.TagId);
+                                            
+                                            <div class="form-check">
+                                                <input type="checkbox" 
+                                                    id="tag_@tag.TagId" 
+                                                    name="SelectedTagIds" 
+                                                    value="@tag.TagId" 
+                                                    class="form-check-input" 
+                                                    @(isSelected ? "checked" : "") />
+                                                <label for="tag_@tag.TagId" class="form-check-label">@tag.TagName</label>
+                                            </div>
+                                        }
+                                    </div>
+                                    <div class="form-text mt-2">Select relevant tags to improve searchability.</div>
+                                </div>
+                                
+                                <div class="alert alert-info d-flex align-items-center">
+                                    <i class="bi bi-info-circle-fill me-2"></i>
+                                    <div>
+                                        <small>This edit will be logged with your account information.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="form-group mb-3">
-                <input type="submit" value="Save" class="btn btn-primary" />
-                <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
-            </div>
-        </form>
+
+                <div class="card-footer bg-light d-flex justify-content-between mt-3">
+                    <div>
+                        <a asp-page="./Index" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left"></i> Back to List
+                        </a>
+                        <a asp-page="./Details" asp-route-id="@Model.NewsArticle.NewsArticleId" class="btn btn-outline-primary ms-2">
+                            <i class="bi bi-eye"></i> View Details
+                        </a>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-warning btn-lg">
+                            <i class="bi bi-save"></i> Save Changes
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
