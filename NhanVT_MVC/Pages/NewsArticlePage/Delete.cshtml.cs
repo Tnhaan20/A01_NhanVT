@@ -15,16 +15,20 @@ namespace NhanVT_Assignment1.Pages.NewsArticlePage
     public class DeleteModel : PageModel
     {
         private readonly INewsArticleRepository _context;
+        private readonly IAccountRepository _accountContext;
+
         private readonly IHubContext<FunewsHub> _hubContext;
 
-        public DeleteModel(INewsArticleRepository context, IHubContext<FunewsHub> hubContext)
+        public DeleteModel(INewsArticleRepository context, IHubContext<FunewsHub> hubContext, IAccountRepository accountContext)
         {
             _context = context;
             _hubContext = hubContext;
+            _accountContext = accountContext;
         }
 
         [BindProperty]
         public NewsArticle NewsArticle { get; set; } = default!;
+        public string UpdatedByName { get; set; } = "Unknown";
 
         public async Task<IActionResult> OnGetAsync(string id)
         {
@@ -34,7 +38,6 @@ namespace NhanVT_Assignment1.Pages.NewsArticlePage
             }
 
             var newsarticle = _context.getNewsById(id);
-
             if (newsarticle == null)
             {
                 return NotFound();
@@ -42,6 +45,14 @@ namespace NhanVT_Assignment1.Pages.NewsArticlePage
             else
             {
                 NewsArticle = newsarticle;
+            if (newsarticle.UpdatedById.HasValue)
+            {
+                var updater = _accountContext.GetAccountById(newsarticle.UpdatedById.Value);
+                if (updater != null)
+                {
+                    UpdatedByName = updater.AccountName;
+                }
+            }
             }
             return Page();
         }

@@ -52,6 +52,7 @@ namespace NhanVT_Assignment1.Pages.NewsArticlePage
                 if (creator != null)
                 {
                     CreatedByName = creator.AccountName;
+
                 }
             }
             

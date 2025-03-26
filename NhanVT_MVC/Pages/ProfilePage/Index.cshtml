@@ -1,0 +1,153 @@
+﻿@page
+@model NhanVT_Assignment1.Pages.ProfilePage.IndexModel
+
+@{
+    ViewData["Title"] = "My Profile";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- User Profile Section -->
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">My Profile</h4>
+                </div>
+                <div class="card-body">
+                    @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+                    {
+                        <div class="alert alert-success">
+                            <i class="fas fa-check-circle"></i> @Model.SuccessMessage
+                        </div>
+                    }
+
+                    <form method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="UserAccount.AccountId" />
+
+                        <div class="mb-3">
+                            <label asp-for="UserAccount.AccountName" class="form-label">Full Name</label>
+                            <input asp-for="UserAccount.AccountName" class="form-control" required />
+                            <span asp-validation-for="UserAccount.AccountName" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="UserAccount.AccountEmail" class="form-label">Email</label>
+                            <input asp-for="UserAccount.AccountEmail" class="form-control" disabled />
+                        </div>
+
+                        <div class="mb-3" hidden>
+                            <label asp-for="UserAccount.AccountPassword" class="form-label">Password</label>
+                            <input asp-for="UserAccount.AccountPassword" class="form-control" type="password" required />
+                            <span asp-validation-for="UserAccount.AccountPassword" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Role</label>
+                            <input class="form-control" value="@(Model.UserAccount.AccountRole == 1 ? "Manager" : "Staff")" disabled />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> Update Profile
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Stats Section -->
+        <div class="col-md-7">
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0">My Statistics</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="card bg-primary text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Total Articles</h5>
+                                    <p class="card-text display-4">@Model.UserArticles.Count</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card bg-info text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Active Articles</h5>
+                                    <p class="card-text display-4">@Model.UserArticles.Count(a => a.NewsStatus == true)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- User's News Articles Section -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h4 class="mb-0">My News Articles</h4>
+                </div>
+                <div class="card-body">
+                    @if (Model.UserArticles.Count > 0)
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Category</th>
+                                        <th>Created Date</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var article in Model.UserArticles)
+                                    {
+                                        <tr>
+                                            <td>@article.NewsTitle</td>
+                                            <td>@article.Category?.CategoryName</td>
+                                            <td>@article.CreatedDate?.ToString("dd/MM/yyyy")</td>
+                                            <td>
+                                                @if (article.NewsStatus == true)
+                                                {
+                                                    <span class="badge bg-success">Active</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-danger">Inactive</span>
+                                                }
+                                            </td>
+                                            <td>
+                                                <a asp-page="/NewsArticlePage/Details" asp-route-id="@article.NewsArticleId" class="btn btn-sm btn-info">View</a>
+                                                <a asp-page="/NewsArticlePage/Edit" asp-route-id="@article.NewsArticleId" class="btn btn-sm btn-primary">Edit</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-info">
+                            You haven't created any news articles yet.
+                            <a asp-page="/NewsArticlePage/Create" class="alert-link">Create your first article</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

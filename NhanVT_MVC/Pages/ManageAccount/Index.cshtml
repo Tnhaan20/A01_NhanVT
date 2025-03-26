@@ -2,73 +2,91 @@
 @model NhanVT_Assignment1.Pages.ManageAccount.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Index";
 }
 @section Scripts
 {
-    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
-    <script>
-                const connection = new signalR.HubConnectionBuilder()
-                    .withUrl("/funewsHub")
-                    .build();
+	<script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+	<script>
+		const connection = new signalR.HubConnectionBuilder()
+		.withUrl("/funewsHub")
+		.build();
 
-        connection.on("Change", function() {
-            location.reload();
-        });
+		connection.on("Change", function() {
+		location.reload();
+		});
 
-        connection.start().catch(function(err) {
-            console.error(err.toString());
-        });
-    </script>
+		connection.start().catch(function(err) {
+		console.error(err.toString());
+		});
+	</script>
 }
-<h1>Manage Account</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.SystemAccount[0].AccountName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SystemAccount[0].AccountEmail)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SystemAccount[0].AccountRole)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SystemAccount[0].AccountPassword)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.SystemAccount) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.AccountName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AccountEmail)
-            </td>
-            <td>
-                @if(item.AccountRole.Equals(1)){
-                    <p>Manager</p>
-                } else {
-                    <p>Staff</p>
-                }
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AccountPassword)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.AccountId">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.AccountId">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.AccountId">Delete</a>
-            </td>
-        </tr>
+@{
+	var isAdmin = HttpContext.Session.GetString("IsAdmin");
+
+	if (!(string.IsNullOrEmpty(isAdmin)))
+	{
+
+		<h1>Manage Account</h1>
+
+		<p>
+			<a asp-page="Create">Create New</a>
+		</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>
+						@Html.DisplayNameFor(model => model.SystemAccount[0].AccountName)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.SystemAccount[0].AccountEmail)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.SystemAccount[0].AccountRole)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.SystemAccount[0].AccountPassword)
+					</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model.SystemAccount)
+				{
+					<tr>
+						<td>
+							@Html.DisplayFor(modelItem => item.AccountName)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.AccountEmail)
+						</td>
+						<td>
+							@if (item.AccountRole.Equals(1))
+							{
+								<p>Manager</p>
+							}
+							else
+							{
+								<p>Staff</p>
+							}
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.AccountPassword)
+						</td>
+						<td>
+							<a asp-page="./Edit" asp-route-id="@item.AccountId">Edit</a> |
+							<a asp-page="./Details" asp-route-id="@item.AccountId">Details</a> |
+							<a asp-page="./Delete" asp-route-id="@item.AccountId">Delete</a>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	}
+	else
+	{
+		<p>You do not permission to access this function</p>
+	}
+
 }
-    </tbody>
-</table>

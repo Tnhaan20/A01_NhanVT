@@ -34,7 +34,7 @@ namespace NhanVT_Assignment1.Pages.ManageAccount
 
             var roleId = HttpContext.Session.GetInt32("RoleId");
             
-            if (roleId != 2 && roleId != 1 && !(isAdmin.Equals("true")))
+            if (roleId == 2 && roleId == 1 && !(isAdmin.Equals("true")))
             {
                 return RedirectToPage("/Unauthorized");
             }
