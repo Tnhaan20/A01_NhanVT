@@ -10,6 +10,8 @@ using AS1_BusinessModel;
 using AS1_Repository;
 using Microsoft.AspNetCore.Http;
 using NuGet.Packaging;
+using Microsoft.AspNetCore.SignalR;
+using NhanVT_MVC.Pages.Hubs;
 
 namespace NhanVT_Assignment1.Pages.NewsArticlePage
 {
@@ -19,17 +21,19 @@ namespace NhanVT_Assignment1.Pages.NewsArticlePage
         private readonly IAccountRepository _accountContext;
         private readonly ICategoriesRepo _categoryContext;
         private readonly ITagRepo _tagRepo;
+        private readonly IHubContext<FunewsHub> _hubContext;
 
         public EditModel(
             INewsArticleRepository context,
             ICategoriesRepo categoryContext,
             IAccountRepository accountContext,
-            ITagRepo tagRepo)
+            ITagRepo tagRepo, IHubContext<FunewsHub> hubContext)
         {
             _context = context;
             _categoryContext = categoryContext;
             _accountContext = accountContext;
             _tagRepo = tagRepo;
+            _hubContext = hubContext;
         }
 
         [BindProperty]
@@ -147,17 +151,14 @@ namespace NhanVT_Assignment1.Pages.NewsArticlePage
 
                 _context.UpdateNews(existingArticle);
                 _context.UpdateNewsArticleTags(existingArticle.NewsArticleId, SelectedTagIds);
+                await _hubContext.Clients.All.SendAsync("Change");
 
-                var updatedArticle = _context.getNewsById(NewsArticle.NewsArticleId.ToString());
 
                 return RedirectToPage("./Index");
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
-                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
-
-                ModelState.AddModelError("", $"Unable to save changes: {ex.Message}");
+                
                 LoadLookupData();
                 return Page();
             }

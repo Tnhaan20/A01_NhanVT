@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,14 +28,19 @@ namespace AS1_DAO
             }
         }
 
-        public List<NewsArticle> GetNewsArticles()
-        {
-            return _dbcontext.NewsArticles
-                .Include(a => a.Category)
-                .Include(s => s.CreatedBy)
-                .Include(t => t.Tags)
-                .ToList();
-        }
+private readonly object _lock = new object();
+
+public List<NewsArticle> GetNewsArticles()
+{
+    lock(_lock)
+    {
+        return _dbcontext.NewsArticles
+            .Include(a => a.Category)
+            .Include(s => s.CreatedBy)
+            .Include(t => t.Tags)
+            .ToList();
+    }
+}
 
         public List<NewsArticle> getNewsByDateRange(DateTime startDate, DateTime endDate)
         {
@@ -130,14 +134,24 @@ namespace AS1_DAO
         }
 
         public void Delete(string id)
+{
+    lock(_lock)
+    {
+        var article = _dbcontext.NewsArticles
+            .Include(a => a.Tags)
+            .FirstOrDefault(a => a.NewsArticleId == id);
+            
+        if (article != null)
         {
-            NewsArticle cur = GetNewsId(id);
-            if (cur != null)
-            {
-                _dbcontext.NewsArticles.Remove(cur);
-                _dbcontext.SaveChanges(); // Delete the object
-            }
+            article.Tags.Clear();
+            _dbcontext.SaveChanges();
+            
+            // Now remove the article
+            _dbcontext.NewsArticles.Remove(article);
+            _dbcontext.SaveChanges();
         }
+    }
+}
 
         public bool isInUsed(short cateId)
         {

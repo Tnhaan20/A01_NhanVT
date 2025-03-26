@@ -39,10 +39,16 @@ namespace AS1_DAO
         {
             return _dbcontext.SystemAccounts.FirstOrDefault(m => m.AccountEmail.Equals(email) && m.AccountPassword.Equals(password));
         }
+        private readonly object _lock = new object();
 
         public SystemAccount getAccByID(short accId)
+
         {
-            return _dbcontext.SystemAccounts.SingleOrDefault(m => m.AccountId == accId);
+            lock (_lock)
+            {
+
+                return _dbcontext.SystemAccounts.SingleOrDefault(m => m.AccountId == accId);
+            }    
         }
 
         public SystemAccount GetAccount(String accEmail)

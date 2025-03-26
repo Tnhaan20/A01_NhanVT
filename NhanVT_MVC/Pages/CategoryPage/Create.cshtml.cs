@@ -7,16 +7,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using AS1_BusinessModel;
 using AS1_Repository;
+using Microsoft.AspNetCore.SignalR;
+using NhanVT_MVC.Pages.Hubs;
 
 namespace NhanVT_Assignment1.Pages.CategoryPage
 {
     public class CreateModel : PageModel
     {
         private readonly ICategoriesRepo _context;
+        private readonly IHubContext<FunewsHub> _hubContext;
 
-        public CreateModel(ICategoriesRepo context)
+        public CreateModel(ICategoriesRepo context, IHubContext<FunewsHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
         }
 
         public IActionResult OnGet()
@@ -48,8 +52,11 @@ namespace NhanVT_Assignment1.Pages.CategoryPage
             try
             {
                 _context.AddCategory(Category);
+                await _hubContext.Clients.All.SendAsync("Change");
 
-            } catch(Exception)
+
+            }
+            catch (Exception)
             {
                 throw;
             }

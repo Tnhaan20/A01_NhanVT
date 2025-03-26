@@ -7,16 +7,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AS1_BusinessModel;
 using AS1_Repository;
+using Microsoft.AspNetCore.SignalR;
+using NhanVT_MVC.Pages.Hubs;
 
 namespace NhanVT_Assignment1.Pages.NewsArticlePage
 {
     public class DeleteModel : PageModel
     {
         private readonly INewsArticleRepository _context;
+        private readonly IHubContext<FunewsHub> _hubContext;
 
-        public DeleteModel(INewsArticleRepository context)
+        public DeleteModel(INewsArticleRepository context, IHubContext<FunewsHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
         }
 
         [BindProperty]
@@ -54,6 +58,8 @@ namespace NhanVT_Assignment1.Pages.NewsArticlePage
             {
                 NewsArticle = newsarticle;
                 _context.RemoveNews(id);
+                await _hubContext.Clients.All.SendAsync("Change");
+
             }
 
             return RedirectToPage("./Index");

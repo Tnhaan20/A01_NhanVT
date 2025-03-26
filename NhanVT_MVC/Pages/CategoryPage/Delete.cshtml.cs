@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AS1_BusinessModel;
 using AS1_Repository;
+using Microsoft.AspNetCore.SignalR;
+using NhanVT_MVC.Pages.Hubs;
 
 namespace NhanVT_Assignment1.Pages.CategoryPage
 {
@@ -14,12 +16,14 @@ namespace NhanVT_Assignment1.Pages.CategoryPage
     {
         private readonly ICategoriesRepo _cateContext;
         private readonly INewsArticleRepository _newsContext;
+        private readonly IHubContext<FunewsHub> _hubContext;
 
 
-        public DeleteModel(ICategoriesRepo cateContext, INewsArticleRepository newsContext)
+        public DeleteModel(ICategoriesRepo cateContext, INewsArticleRepository newsContext, IHubContext<FunewsHub> hubContext)
         {
             _cateContext = cateContext;
             _newsContext = newsContext;
+            _hubContext = hubContext;
         }
 
         [BindProperty]
@@ -70,7 +74,9 @@ namespace NhanVT_Assignment1.Pages.CategoryPage
     try
     {
         _cateContext.DeleteCategory(id);
-        return RedirectToPage("./Index");
+                await _hubContext.Clients.All.SendAsync("Change");
+
+                return RedirectToPage("./Index");
     }
     catch (DbUpdateException ex)
     {

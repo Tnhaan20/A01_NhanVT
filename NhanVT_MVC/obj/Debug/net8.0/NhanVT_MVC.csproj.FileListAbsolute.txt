@@ -535,3 +535,4 @@ D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\NhanVT_MVC\obj\Debug\n
 D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\NhanVT_MVC\obj\Debug\net8.0\NhanVT_MVC.pdb
 D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\NhanVT_MVC\obj\Debug\net8.0\NhanVT_MVC.genruntimeconfig.cache
 D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\NhanVT_MVC\obj\Debug\net8.0\ref\NhanVT_MVC.dll
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\NhanVT_MVC\bin\Debug\net8.0\libman.json

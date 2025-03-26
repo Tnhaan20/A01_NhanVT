@@ -33,13 +33,17 @@ namespace AS1_DAO
         }
 
 
-        public Tag GetTagsId(int id)
-        {
-            return _dbContext.Tags
-        .AsNoTracking()
-        .SingleOrDefault(a => a.TagId == id);
-        
-        }
+        private readonly object _lock = new object();
+
+public Tag GetTagsId(int id)
+{
+    lock(_lock)
+    {
+        return _dbContext.Tags
+            .AsNoTracking()
+            .SingleOrDefault(a => a.TagId == id);
+    }
+}
 
         public List<Tag> GetAllTag()
         {
