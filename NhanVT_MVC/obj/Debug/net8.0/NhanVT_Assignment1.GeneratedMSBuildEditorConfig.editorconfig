@@ -1,0 +1,125 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NhanVT_Assignment1
+build_property.RootNamespace = NhanVT_Assignment1
+build_property.ProjectDir = D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\NhanVT_Assignment1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\NhanVT_Assignment1
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/CategoryPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/CategoryPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/CategoryPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/CategoryPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/CategoryPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/ManageAccount/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlQWNjb3VudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/ManageAccount/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlQWNjb3VudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/ManageAccount/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlQWNjb3VudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/ManageAccount/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlQWNjb3VudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/ManageAccount/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/NewsArticlePage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0FydGljbGVQYWdlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/NewsArticlePage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0FydGljbGVQYWdlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/NewsArticlePage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0FydGljbGVQYWdlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/NewsArticlePage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0FydGljbGVQYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/NewsArticlePage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0FydGljbGVQYWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/NewsArticlePage/Report.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0FydGljbGVQYWdlXFJlcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/Unauthorized.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5hdXRob3JpemVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Spring 2025/PRN222/Assignment/NhanVT_Assignment1/NhanVT_Assignment1/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6eht4nhzr6

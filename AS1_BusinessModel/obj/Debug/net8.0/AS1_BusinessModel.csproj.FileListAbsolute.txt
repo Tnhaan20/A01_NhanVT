@@ -1,0 +1,14 @@
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\bin\Debug\net8.0\AS1_BusinessModel.deps.json
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\bin\Debug\net8.0\AS1_BusinessModel.runtimeconfig.json
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\bin\Debug\net8.0\AS1_BusinessModel.dll
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\bin\Debug\net8.0\AS1_BusinessModel.pdb
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\obj\Debug\net8.0\AS1_BusinessModel.csproj.AssemblyReference.cache
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\obj\Debug\net8.0\AS1_BusinessModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\obj\Debug\net8.0\AS1_BusinessModel.AssemblyInfoInputs.cache
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\obj\Debug\net8.0\AS1_BusinessModel.AssemblyInfo.cs
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\obj\Debug\net8.0\AS1_BusinessModel.csproj.CoreCompileInputs.cache
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\obj\Debug\net8.0\AS1_BusinessModel.dll
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\obj\Debug\net8.0\refint\AS1_BusinessModel.dll
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\obj\Debug\net8.0\AS1_BusinessModel.pdb
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\obj\Debug\net8.0\AS1_BusinessModel.genruntimeconfig.cache
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_BusinessModel\obj\Debug\net8.0\ref\AS1_BusinessModel.dll

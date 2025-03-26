@@ -1,0 +1,15 @@
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\bin\Debug\net8.0\AS1_DAO.deps.json
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\bin\Debug\net8.0\AS1_DAO.dll
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\bin\Debug\net8.0\AS1_DAO.pdb
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\bin\Debug\net8.0\AS1_BusinessModel.dll
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\bin\Debug\net8.0\AS1_BusinessModel.pdb
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\AS1_DAO.csproj.AssemblyReference.cache
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\AS1_DAO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\AS1_DAO.AssemblyInfoInputs.cache
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\AS1_DAO.AssemblyInfo.cs
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\AS1_DAO.csproj.CoreCompileInputs.cache
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\AS1_DAO.csproj.Up2Date
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\AS1_DAO.dll
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\refint\AS1_DAO.dll
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\AS1_DAO.pdb
+D:\Study\Spring 2025\PRN222\Assignment\NhanVT_Assignment1\AS1_DAO\obj\Debug\net8.0\ref\AS1_DAO.dll

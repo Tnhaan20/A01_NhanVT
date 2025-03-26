@@ -1,0 +1,954 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_MVC.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\nhanvt_mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_MVC.csproj|solutionrelative:nhanvt_assignment1\\nhanvt_mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\categorypage\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\categorypage\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EFB5E0-ABCB-400E-A35B-884140367D23}|AS1_DAO\\AS1_DAO.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EFB5E0-ABCB-400E-A35B-884140367D23}|AS1_DAO\\AS1_DAO.csproj|solutionrelative:as1_dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_repository\\inewsarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|solutionrelative:as1_repository\\inewsarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_repository\\newsarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|solutionrelative:as1_repository\\newsarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_repository\\icategoriesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|solutionrelative:as1_repository\\icategoriesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EFB5E0-ABCB-400E-A35B-884140367D23}|AS1_DAO\\AS1_DAO.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_dao\\newsarticledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EFB5E0-ABCB-400E-A35B-884140367D23}|AS1_DAO\\AS1_DAO.csproj|solutionrelative:as1_dao\\newsarticledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_repository\\categoriesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|solutionrelative:as1_repository\\categoriesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\categorypage\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\categorypage\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\categorypage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\categorypage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\categorypage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\categorypage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EFB5E0-ABCB-400E-A35B-884140367D23}|AS1_DAO\\AS1_DAO.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_dao\\tagdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EFB5E0-ABCB-400E-A35B-884140367D23}|AS1_DAO\\AS1_DAO.csproj|solutionrelative:as1_dao\\tagdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\categorypage\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\categorypage\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\categorypage\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\categorypage\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\newsarticlepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\newsarticlepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\newsarticlepage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\newsarticlepage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\manageaccount\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\manageaccount\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\categorypage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\categorypage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\categorypage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\categorypage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\categorypage\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\categorypage\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\categorypage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\categorypage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\newsarticlepage\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\newsarticlepage\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|solutionrelative:as1_repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|solutionrelative:as1_repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EFB5E0-ABCB-400E-A35B-884140367D23}|AS1_DAO\\AS1_DAO.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_dao\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EFB5E0-ABCB-400E-A35B-884140367D23}|AS1_DAO\\AS1_DAO.csproj|solutionrelative:as1_dao\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\unauthorized.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\unauthorized.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\newsarticlepage\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\newsarticlepage\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EFB5E0-ABCB-400E-A35B-884140367D23}|AS1_DAO\\AS1_DAO.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_dao\\funewsmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EFB5E0-ABCB-400E-A35B-884140367D23}|AS1_DAO\\AS1_DAO.csproj|solutionrelative:as1_dao\\funewsmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\manageaccount\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\manageaccount\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\newsarticlepage\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\newsarticlepage\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\newsarticlepage\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\newsarticlepage\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\manageaccount\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\manageaccount\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\manageaccount\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\manageaccount\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\newsarticlepage\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\newsarticlepage\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\newsarticlepage\\report.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\newsarticlepage\\report.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\manageaccount\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\manageaccount\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\manageaccount\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\manageaccount\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\manageaccount\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\manageaccount\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\newsarticlepage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\newsarticlepage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_repository\\as1_repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AC41993B-23F4-4F7E-A4BC-D0E9AAAB93A1}|AS1_Repository\\AS1_Repository.csproj|solutionrelative:as1_repository\\as1_repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\newsarticlepage\\report.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\newsarticlepage\\report.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\manageaccount\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\manageaccount\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\manageaccount\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\manageaccount\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\manageaccount\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\manageaccount\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\newsarticlepage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\newsarticlepage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\nhanvt_assignment1\\pages\\newsarticlepage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5BA5FAB-8D19-4B78-B44B-4307D1F14969}|NhanVT_Assignment1\\NhanVT_Assignment1.csproj|solutionrelative:nhanvt_assignment1\\pages\\newsarticlepage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EFB5E0-ABCB-400E-A35B-884140367D23}|AS1_DAO\\AS1_DAO.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_dao\\as1_dao.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{04EFB5E0-ABCB-400E-A35B-884140367D23}|AS1_DAO\\AS1_DAO.csproj|solutionrelative:as1_dao\\as1_dao.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3F3E8D8-7A9B-4A12-84C6-CDB231DB27FF}|AS1_BusinessModel\\AS1_BusinessModel.csproj|d:\\study\\spring 2025\\prn222\\assignment\\nhanvt_assignment1\\as1_businessmodel\\as1_businessmodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D3F3E8D8-7A9B-4A12-84C6-CDB231DB27FF}|AS1_BusinessModel\\AS1_BusinessModel.csproj|solutionrelative:as1_businessmodel\\as1_businessmodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NhanVT_MVC",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\NhanVT_MVC.csproj",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\NhanVT_MVC.csproj",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\NhanVT_MVC.csproj",
+              "RelativeToolTip": "NhanVT_Assignment1\\NhanVT_MVC.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-26T00:10:08.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\CategoryPage\\Details.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Details.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\CategoryPage\\Details.cshtml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T05:28:36.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Delete.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\CategoryPage\\Delete.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Delete.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\CategoryPage\\Delete.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T05:28:36.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NewsArticleDAO.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_DAO\\NewsArticleDAO.cs",
+              "RelativeDocumentMoniker": "AS1_DAO\\NewsArticleDAO.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_DAO\\NewsArticleDAO.cs",
+              "RelativeToolTip": "AS1_DAO\\NewsArticleDAO.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAjwFIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T01:43:51.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TagDAO.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_DAO\\TagDAO.cs",
+              "RelativeDocumentMoniker": "AS1_DAO\\TagDAO.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_DAO\\TagDAO.cs",
+              "RelativeToolTip": "AS1_DAO\\TagDAO.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T01:46:00.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\ManageAccount\\Index.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Index.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\ManageAccount\\Index.cshtml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAADwvycAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T03:09:04.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\CategoryPage\\Delete.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Delete.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\CategoryPage\\Delete.cshtml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T05:28:36.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryDAO.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_DAO\\CategoryDAO.cs",
+              "RelativeDocumentMoniker": "AS1_DAO\\CategoryDAO.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_DAO\\CategoryDAO.cs",
+              "RelativeToolTip": "AS1_DAO\\CategoryDAO.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAIAwwFkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T01:40:08.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICategoriesRepo.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\ICategoriesRepo.cs",
+              "RelativeDocumentMoniker": "AS1_Repository\\ICategoriesRepo.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\ICategoriesRepo.cs",
+              "RelativeToolTip": "AS1_Repository\\ICategoriesRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T14:53:51.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "INewsArticleRepository.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\INewsArticleRepository.cs",
+              "RelativeDocumentMoniker": "AS1_Repository\\INewsArticleRepository.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\INewsArticleRepository.cs",
+              "RelativeToolTip": "AS1_Repository\\INewsArticleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T00:00:24.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoriesRepo.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\CategoriesRepo.cs",
+              "RelativeDocumentMoniker": "AS1_Repository\\CategoriesRepo.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\CategoriesRepo.cs",
+              "RelativeToolTip": "AS1_Repository\\CategoriesRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAewA4AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T15:05:50.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NewsArticleRepository.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\NewsArticleRepository.cs",
+              "RelativeDocumentMoniker": "AS1_Repository\\NewsArticleRepository.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\NewsArticleRepository.cs",
+              "RelativeToolTip": "AS1_Repository\\NewsArticleRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T02:47:49.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Details.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\CategoryPage\\Details.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Details.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\CategoryPage\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T05:28:36.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Index.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\CategoryPage\\Index.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Index.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\CategoryPage\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T05:28:36.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\CategoryPage\\Index.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Index.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\CategoryPage\\Index.cshtml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAnwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T05:28:36.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\Login.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\Login.cshtml.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAYwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T02:14:36.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Index.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Index.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Index.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T03:10:02.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Index.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Index.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Index.cshtml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAEwBcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T03:10:02.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\CategoryPage\\Edit.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Edit.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\CategoryPage\\Edit.cshtml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T05:28:36.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwBwAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T09:16:35.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\CategoryPage\\Edit.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Edit.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\CategoryPage\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T05:28:36.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\CategoryPage\\Create.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Create.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\CategoryPage\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T05:28:35.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Create.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\CategoryPage\\Create.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\CategoryPage\\Create.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\CategoryPage\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T05:28:35.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AccountDAO.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_DAO\\AccountDAO.cs",
+              "RelativeDocumentMoniker": "AS1_DAO\\AccountDAO.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_DAO\\AccountDAO.cs",
+              "RelativeToolTip": "AS1_DAO\\AccountDAO.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAIBJwIMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T01:24:09.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Unauthorized.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\Unauthorized.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\Unauthorized.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\Unauthorized.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\Unauthorized.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T02:17:33.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Program.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Program.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Program.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T01:28:53.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Edit.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Edit.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Edit.cshtml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T03:10:02.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "AS1_Repository\\AccountRepository.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\AccountRepository.cs",
+              "RelativeToolTip": "AS1_Repository\\AccountRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAmwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T01:34:33.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IAccountRepository.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\IAccountRepository.cs",
+              "RelativeDocumentMoniker": "AS1_Repository\\IAccountRepository.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\IAccountRepository.cs",
+              "RelativeToolTip": "AS1_Repository\\IAccountRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T01:33:24.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\Login.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\Login.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T02:11:08.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\appsettings.json",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\appsettings.json",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\appsettings.json",
+              "RelativeToolTip": "NhanVT_Assignment1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-11T01:28:45.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FunewsManagementContext.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_DAO\\FunewsManagementContext.cs",
+              "RelativeDocumentMoniker": "AS1_DAO\\FunewsManagementContext.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_DAO\\FunewsManagementContext.cs",
+              "RelativeToolTip": "AS1_DAO\\FunewsManagementContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T01:29:40.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Create.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Create.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Create.cshtml.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwGEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T03:10:01.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\ManageAccount\\Details.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Details.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\ManageAccount\\Details.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T03:09:04.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\ManageAccount\\Edit.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Edit.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\ManageAccount\\Edit.cshtml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T03:09:04.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Delete.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Delete.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Delete.cshtml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T03:10:02.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Details.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Details.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Details.cshtml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwBIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T03:10:02.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Edit.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\ManageAccount\\Edit.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Edit.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\ManageAccount\\Edit.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAIBJwDwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T03:09:04.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Delete.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Delete.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Delete.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T03:10:02.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Create.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\ManageAccount\\Create.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Create.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\ManageAccount\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwCkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T03:09:03.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Report.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Report.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Report.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Report.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Report.cshtml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAABQwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T09:07:42.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\ManageAccount\\Create.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Create.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\ManageAccount\\Create.cshtml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwBcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T03:09:03.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Delete.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\ManageAccount\\Delete.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Delete.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\ManageAccount\\Delete.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwCkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T03:09:04.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Create.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Create.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Create.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Create.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAIBJwCAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T03:10:01.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Report.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Report.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Report.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Report.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Report.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAjwDkAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T09:05:44.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AS1_Repository.csproj",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\AS1_Repository.csproj",
+              "RelativeDocumentMoniker": "AS1_Repository\\AS1_Repository.csproj",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_Repository\\AS1_Repository.csproj",
+              "RelativeToolTip": "AS1_Repository\\AS1_Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-10T09:13:43.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\ManageAccount\\Delete.cshtml.cs",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Delete.cshtml.cs",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\ManageAccount\\Delete.cshtml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwDUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T03:09:04.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Index.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\ManageAccount\\Index.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Index.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\ManageAccount\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T03:09:04.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Details.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\ManageAccount\\Details.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\ManageAccount\\Details.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\ManageAccount\\Details.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwBEAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T03:09:04.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "NhanVT_Assignment1\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-11T02:43:49.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Edit.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Edit.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T03:10:02.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Details.cshtml",
+              "RelativeDocumentMoniker": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Details.cshtml",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\NhanVT_Assignment1\\Pages\\NewsArticlePage\\Details.cshtml",
+              "RelativeToolTip": "NhanVT_Assignment1\\Pages\\NewsArticlePage\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T03:10:02.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "AS1_BusinessModel.csproj",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_BusinessModel\\AS1_BusinessModel.csproj",
+              "RelativeDocumentMoniker": "AS1_BusinessModel\\AS1_BusinessModel.csproj",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_BusinessModel\\AS1_BusinessModel.csproj",
+              "RelativeToolTip": "AS1_BusinessModel\\AS1_BusinessModel.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-10T09:14:26.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "AS1_DAO.csproj",
+              "DocumentMoniker": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_DAO\\AS1_DAO.csproj",
+              "RelativeDocumentMoniker": "AS1_DAO\\AS1_DAO.csproj",
+              "ToolTip": "D:\\Study\\Spring 2025\\PRN222\\Assignment\\NhanVT_Assignment1\\AS1_DAO\\AS1_DAO.csproj",
+              "RelativeToolTip": "AS1_DAO\\AS1_DAO.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-10T09:13:03.756Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
