@@ -27,6 +27,9 @@ namespace NhanVT_Assignment1.Pages.NewsArticlePage
         public string Email { get; set; } = default!;
         public Dictionary<int, string> UpdatedByNames { get; set; } = new Dictionary<int, string>();
         public Dictionary<string, List<string>> ArticleTagNames { get; set; } = new Dictionary<string, List<string>>();
+        
+        [BindProperty(SupportsGet = true)]
+        public string SearchString { get; set; }
 
         public IActionResult OnGet()
         {
@@ -41,7 +44,24 @@ namespace NhanVT_Assignment1.Pages.NewsArticlePage
                 Email = email;
             }
             
-            NewsArticle = _context.GetNewsArticles();
+            // Get all news articles
+            var articles = _context.GetNewsArticles();
+            
+            // Apply search filter if search string is provided
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                SearchString = SearchString.ToLower();
+                articles = articles.Where(a => 
+                    (a.NewsTitle != null && a.NewsTitle.ToLower().Contains(SearchString)) ||
+                    (a.Headline != null && a.Headline.ToLower().Contains(SearchString)) ||
+                    (a.Category != null && a.Category.CategoryName != null && 
+                     a.Category.CategoryName.ToLower().Contains(SearchString)) ||
+                    (a.CreatedBy != null && a.CreatedBy.AccountName != null && 
+                     a.CreatedBy.AccountName.ToLower().Contains(SearchString))
+                ).ToList();
+            }
+            
+            NewsArticle = articles;
 
             // Get account names for updaters
             foreach (NewsArticle article in NewsArticle)

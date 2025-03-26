@@ -120,10 +120,21 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <div class="btn-group" role="group">
-                        search
-                    </div>
-                </div>
+    <form method="get" class="d-flex">
+        <div class="input-group">
+            <input type="text" name="SearchString" value="@Model.SearchString" class="form-control" placeholder="Search articles..." />
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-search"></i> Search
+            </button>
+            @if (!string.IsNullOrEmpty(Model.SearchString))
+            {
+                <a asp-page="./Index" class="btn btn-outline-secondary">
+                    <i class="bi bi-x-circle"></i> Clear
+                </a>
+            }
+        </div>
+    </form>
+</div>
             </div>
         </div>
     </div>
