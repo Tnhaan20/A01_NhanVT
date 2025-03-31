@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NhanVT_MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c51f46d82aa795ba96334d17183fbe1d49504f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6add90ad2f1bb17bdc943ee14dac98b8bd192351")]
 [assembly: System.Reflection.AssemblyProductAttribute("NhanVT_MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NhanVT_MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -5,6 +5,8 @@
     ViewData["Title"] = "News Articles";
 }
 
+
+
 @section Scripts
 {
     <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
@@ -88,6 +90,12 @@
         
     </style>
 }
+
+@{
+	var isStaff = HttpContext.Session.GetInt32("RoleId");
+
+    if (isStaff.Value == 1 || isStaff.Value == 2)
+	{
 
 <div class="container-fluid news-container py-4">
     <!-- Card header with title and action buttons -->
@@ -277,4 +285,10 @@
             </div>
         </div>
     </div>
-</div>
+        </div>
+    }
+    else
+    {
+        Response.Redirect("/Unauthorized");
+    }
+}

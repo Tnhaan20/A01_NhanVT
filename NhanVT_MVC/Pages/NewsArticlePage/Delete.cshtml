@@ -4,7 +4,11 @@
 @{
     ViewData["Title"] = "Delete Article";
 }
+@{
+    var isStaff = HttpContext.Session.GetInt32("RoleId");
 
+    if (isStaff.Value == 1)
+    {
 <div class="container my-4">
     <div class="card shadow border-danger">
         <div class="card-header bg-danger text-white d-flex align-items-center">
@@ -127,3 +131,10 @@
         </div>
     </div>
 </div>
+
+    }
+    else
+    {
+        Response.Redirect("/Unauthorized");
+    }
+    }

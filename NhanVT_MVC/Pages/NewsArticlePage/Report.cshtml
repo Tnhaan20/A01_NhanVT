@@ -1,258 +1,258 @@
 ﻿@page
 @model NhanVT_Assignment1.Pages.NewsArticlePage.ReportModel
 @{
-    ViewData["Title"] = "News Statistics Report";
+	ViewData["Title"] = "News Statistics Report";
 }
 
 @{
-    var isAdmin = HttpContext.Session.GetString("IsAdmin");
-    ;
+	var isAdmin = HttpContext.Session.GetString("IsAdmin");
+	;
 
-    var roleId = HttpContext.Session.GetInt32("RoleId");
-
-
-
-    if (!string.IsNullOrEmpty(isAdmin) && isAdmin.Equals("true"))
-    {
+	var roleId = HttpContext.Session.GetInt32("RoleId");
 
 
-        <div class="container mt-4">
-            <h2 class="mb-4">News Statistics Report</h2>
 
-            <!-- Date Range Selector -->
-            <div class="card mb-4">
-                <div class="card-header bg-primary text-white">
-                    <h5 class="mb-0">Select Date Range</h5>
-                </div>
-                <div class="card-body">
-                    <form method="get" class="row align-items-end">
-                        <div class="col-md-4">
-                            <label asp-for="StartDate" class="form-label">Start Date</label>
-                            <input type="date" asp-for="StartDate" class="form-control" />
-                        </div>
-                        <div class="col-md-4">
-                            <label asp-for="EndDate" class="form-label">End Date</label>
-                            <input type="date" asp-for="EndDate" class="form-control" />
-                        </div>
-                        <div class="col-md-4">
-                            <button type="submit" class="btn btn-primary">Generate Report</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+	if (!string.IsNullOrEmpty(isAdmin) && isAdmin.Equals("true"))
+	{
 
-            @if (Model.ShowReport)
-            {
-                <!-- Summary Statistics -->
-                <div class="card mb-4">
-                    <div class="card-header bg-info text-white">
-                        <h5 class="mb-0">Report Summary</h5>
-                        <small>Period: @(Model.StartDate?.ToString("yyyy-MM-dd")) to @(Model.EndDate?.ToString("yyyy-MM-dd"))</small>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <canvas id="categoryChart" width="400" height="300"></canvas>
-                            </div>
-                            <div class="col-md-6">
-                                <canvas id="statusChart" width="400" height="300"></canvas>
-                            </div>
-                        </div>
 
-                        <div class="row mt-4">
-                            <div class="col-md-6">
-                                <canvas id="dailyArticlesChart" width="400" height="300"></canvas>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Statistics Summary</h5>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                Total Articles
-                                                <span class="badge bg-primary rounded-pill">@Model.NewsArticles.Count()</span>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                Active Articles
-                                                <span class="badge bg-success rounded-pill">@Model.NewsArticles.Count(a => Convert.ToInt32(a.NewsStatus) == 1)</span>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                Inactive Articles
-                                                <span class="badge bg-danger rounded-pill">@Model.NewsArticles.Count(a => Convert.ToInt32(a.NewsStatus) == 0)</span>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                Categories Represented
-                                                <span class="badge bg-info rounded-pill">@Model.NewsArticles.Select(a => a.CategoryId).Distinct().Count()</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+		<div class="container mt-4">
+			<h2 class="mb-4">News Statistics Report</h2>
 
-                <!-- Detailed News Data -->
-                <div class="card">
-                    <div class="card-header bg-success text-white">
-                        <h5 class="mb-0">News Articles (Sorted by Created Date - Newest First)</h5>
-                    </div>
-                    <div class="card-body">
-                        @if (Model.NewsArticles.Any())
-                        {
-                            <div class="table-responsive">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Title</th>
-                                            <th>Created Date</th>
-                                            <th>Category</th>
-                                            <th>Status</th>
-                                            <th>Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach (var article in Model.NewsArticles)
-                                        {
-                                            <tr>
-                                                <td>@article.NewsTitle</td>
-                                                <td>@(article.CreatedDate?.ToString("yyyy-MM-dd") ?? "N/A")</td>
-                                                <td>@(article.Category?.CategoryDesciption ?? "N/A")</td>
-                                                <td>
-                                                    @if (Convert.ToInt32(article.NewsStatus) == 1)
-                                                    {
-                                                        <span class="badge bg-success">Active</span>
-                                                    }
-                                                    else
-                                                    {
-                                                        <span class="badge bg-danger">Inactive</span>
-                                                    }
-                                                </td>
-                                                <td>
-                                                    <a asp-page="./Details" asp-route-id="@article.NewsArticleId" class="btn btn-sm btn-info">View</a>
-                                                </td>
-                                            </tr>
-                                        }
-                                    </tbody>
-                                </table>
-                            </div>
-                        }
-                        else
-                        {
-                            <div class="alert alert-info">
-                                No news articles found in the selected date range.
-                            </div>
-                        }
-                    </div>
-                </div>
-            }
-        </div>
+			<!-- Date Range Selector -->
+			<div class="card mb-4">
+				<div class="card-header bg-primary text-white">
+					<h5 class="mb-0">Select Date Range</h5>
+				</div>
+				<div class="card-body">
+					<form method="get" class="row align-items-end">
+						<div class="col-md-4">
+							<label asp-for="StartDate" class="form-label">Start Date</label>
+							<input type="date" asp-for="StartDate" class="form-control" />
+						</div>
+						<div class="col-md-4">
+							<label asp-for="EndDate" class="form-label">End Date</label>
+							<input type="date" asp-for="EndDate" class="form-control" />
+						</div>
+						<div class="col-md-4">
+							<button type="submit" class="btn btn-primary">Generate Report</button>
+						</div>
+					</form>
+				</div>
+			</div>
 
-        @section Scripts {
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+			@if (Model.ShowReport)
+			{
+				<!-- Summary Statistics -->
+				<div class="card mb-4">
+					<div class="card-header bg-info text-white">
+						<h5 class="mb-0">Report Summary</h5>
+						<small>Period: @(Model.StartDate?.ToString("yyyy-MM-dd")) to @(Model.EndDate?.ToString("yyyy-MM-dd"))</small>
+					</div>
+					<div class="card-body">
+						<div class="row">
+							<div class="col-md-6">
+								<canvas id="categoryChart" width="400" height="300"></canvas>
+							</div>
+							<div class="col-md-6">
+								<canvas id="statusChart" width="400" height="300"></canvas>
+							</div>
+						</div>
 
-        @if (Model.ShowReport)
-            {
-                <script>
-                    // Data from model
-                    const categoryData = @Html.Raw(Json.Serialize(Model.CategoryData));
-                    const statusData = @Html.Raw(Json.Serialize(Model.StatusData));
-                    const dailyArticlesData = @Html.Raw(Json.Serialize(Model.DailyArticlesData));
+						<div class="row mt-4">
+							<div class="col-md-6">
+								<canvas id="dailyArticlesChart" width="400" height="300"></canvas>
+							</div>
+							<div class="col-md-6">
+								<div class="card h-100">
+									<div class="card-body">
+										<h5 class="card-title">Statistics Summary</h5>
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												Total Articles
+												<span class="badge bg-primary rounded-pill">@Model.NewsArticles.Count()</span>
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												Active Articles
+												<span class="badge bg-success rounded-pill">@Model.NewsArticles.Count(a => Convert.ToInt32(a.NewsStatus) == 1)</span>
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												Inactive Articles
+												<span class="badge bg-danger rounded-pill">@Model.NewsArticles.Count(a => Convert.ToInt32(a.NewsStatus) == 0)</span>
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												Categories Represented
+												<span class="badge bg-info rounded-pill">@Model.NewsArticles.Select(a => a.CategoryId).Distinct().Count()</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                    // Category Chart
-                    const categoryCtx = document.getElementById('categoryChart').getContext('2d');
-                    new Chart(categoryCtx, {
-                    type: 'pie',
-                    data: {
-                    labels: categoryData.labels,
-                    datasets: [{
-                    label: 'Articles by Category',
-                    data: categoryData.data,
-                    backgroundColor: [
-                    '#4e73df', '#1cc88a', '#36b9cc', '#f6c23e',
-                    '#e74a3b', '#5a5c69', '#858796', '#6610f2',
-                    '#6f42c1', '#fd7e14'
-                    ],
-                    hoverOffset: 4
-                    }]
-                    },
-                    options: {
-                    responsive: true,
-                    plugins: {
-                    legend: { position: 'right' },
-                    title: {
-                    display: true,
-                    text: 'Articles by Category'
-                    }
-                    }
-                    }
-                    });
+				<!-- Detailed News Data -->
+				<div class="card">
+					<div class="card-header bg-success text-white">
+						<h5 class="mb-0">News Articles (Sorted by Created Date - Newest First)</h5>
+					</div>
+					<div class="card-body">
+						@if (Model.NewsArticles.Any())
+						{
+							<div class="table-responsive">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th>Title</th>
+											<th>Created Date</th>
+											<th>Category</th>
+											<th>Status</th>
+											<th>Actions</th>
+										</tr>
+									</thead>
+									<tbody>
+										@foreach (var article in Model.NewsArticles)
+										{
+											<tr>
+												<td>@article.NewsTitle</td>
+												<td>@(article.CreatedDate?.ToString("yyyy-MM-dd") ?? "N/A")</td>
+												<td>@(article.Category?.CategoryDesciption ?? "N/A")</td>
+												<td>
+													@if (Convert.ToInt32(article.NewsStatus) == 1)
+													{
+														<span class="badge bg-success">Active</span>
+													}
+													else
+													{
+														<span class="badge bg-danger">Inactive</span>
+													}
+												</td>
+												<td>
+													<a asp-page="./Details" asp-route-id="@article.NewsArticleId" class="btn btn-sm btn-info">View</a>
+												</td>
+											</tr>
+										}
+									</tbody>
+								</table>
+							</div>
+						}
+						else
+						{
+							<div class="alert alert-info">
+								No news articles found in the selected date range.
+							</div>
+						}
+					</div>
+				</div>
+			}
+		</div>
 
-                    // Status Chart
-                    const statusCtx = document.getElementById('statusChart').getContext('2d');
-                    new Chart(statusCtx, {
-                    type: 'doughnut',
-                    data: {
-                    labels: statusData.labels,
-                    datasets: [{
-                    label: 'Articles by Status',
-                    data: statusData.data,
-                    backgroundColor: [
-                    '#1cc88a', // Active - Green
-                    '#e74a3b'  // Inactive - Red
-                    ],
-                    hoverOffset: 4
-                    }]
-                    },
-                    options: {
-                    responsive: true,
-                    plugins: {
-                    legend: { position: 'right' },
-                    title: {
-                    display: true,
-                    text: 'Articles by Status'
-                    }
-                    }
-                    }
-                    });
+		@section Scripts {
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-                    // Daily Articles Chart
-                    const dailyArticlesCtx = document.getElementById('dailyArticlesChart').getContext('2d');
-                    new Chart(dailyArticlesCtx, {
-                    type: 'bar',
-                    data: {
-                    labels: dailyArticlesData.labels,
-                    datasets: [{
-                    label: 'Articles Published',
-                    data: dailyArticlesData.data,
-                    backgroundColor: '#4e73df',
-                    borderColor: '#4e73df',
-                    borderWidth: 1
-                    }]
-                    },
-                    options: {
-                    responsive: true,
-                    scales: {
-                    y: {
-                    beginAtZero: true,
-                    ticks: { precision: 0 }
-                    }
-                    },
-                    plugins: {
-                    title: {
-                    display: true,
-                    text: 'Articles Published by Day'
-                    }
-                    }
-                    }
-                    });
-                </script>
-            }
-        }
-    }
-    else{
-        <p>You do not permission to access this function</p>
+		@if (Model.ShowReport)
+			{
+				<script>
+					// Data from model
+					const categoryData = @Html.Raw(Json.Serialize(Model.CategoryData));
+					const statusData = @Html.Raw(Json.Serialize(Model.StatusData));
+					const dailyArticlesData = @Html.Raw(Json.Serialize(Model.DailyArticlesData));
 
-    }
+					// Category Chart
+					const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+					new Chart(categoryCtx, {
+					type: 'pie',
+					data: {
+					labels: categoryData.labels,
+					datasets: [{
+					label: 'Articles by Category',
+					data: categoryData.data,
+					backgroundColor: [
+					'#4e73df', '#1cc88a', '#36b9cc', '#f6c23e',
+					'#e74a3b', '#5a5c69', '#858796', '#6610f2',
+					'#6f42c1', '#fd7e14'
+					],
+					hoverOffset: 4
+					}]
+					},
+					options: {
+					responsive: true,
+					plugins: {
+					legend: { position: 'right' },
+					title: {
+					display: true,
+					text: 'Articles by Category'
+					}
+					}
+					}
+					});
+
+					// Status Chart
+					const statusCtx = document.getElementById('statusChart').getContext('2d');
+					new Chart(statusCtx, {
+					type: 'doughnut',
+					data: {
+					labels: statusData.labels,
+					datasets: [{
+					label: 'Articles by Status',
+					data: statusData.data,
+					backgroundColor: [
+					'#1cc88a', // Active - Green
+					'#e74a3b'  // Inactive - Red
+					],
+					hoverOffset: 4
+					}]
+					},
+					options: {
+					responsive: true,
+					plugins: {
+					legend: { position: 'right' },
+					title: {
+					display: true,
+					text: 'Articles by Status'
+					}
+					}
+					}
+					});
+
+					// Daily Articles Chart
+					const dailyArticlesCtx = document.getElementById('dailyArticlesChart').getContext('2d');
+					new Chart(dailyArticlesCtx, {
+					type: 'bar',
+					data: {
+					labels: dailyArticlesData.labels,
+					datasets: [{
+					label: 'Articles Published',
+					data: dailyArticlesData.data,
+					backgroundColor: '#4e73df',
+					borderColor: '#4e73df',
+					borderWidth: 1
+					}]
+					},
+					options: {
+					responsive: true,
+					scales: {
+					y: {
+					beginAtZero: true,
+					ticks: { precision: 0 }
+					}
+					},
+					plugins: {
+					title: {
+					display: true,
+					text: 'Articles Published by Day'
+					}
+					}
+					}
+					});
+				</script>
+			}
+		}
+	}
+	else
+	{
+		Response.Redirect("/Unauthorized");
+	}
 
 }

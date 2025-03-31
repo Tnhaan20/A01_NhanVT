@@ -91,6 +91,7 @@ namespace NhanVT_Assignment1.Pages.ProfilePage
 
                 // Update only the allowed fields
                 existingAccount.AccountName = UserAccount.AccountName;
+                existingAccount.AccountEmail = UserAccount.AccountEmail;
                 existingAccount.AccountPassword = UserAccount.AccountPassword;
 
                 // Save changes

@@ -4,7 +4,11 @@
 @{
     ViewData["Title"] = "Edit News Article";
 }
+@{
+	var isStaff = HttpContext.Session.GetInt32("RoleId");
 
+	if (isStaff.Value == 1)
+	{
 <div class="container my-4">
     <div class="card shadow-sm">
         <div class="card-header bg-warning text-dark d-flex align-items-center">
@@ -177,7 +181,14 @@
         </div>
     </div>
 </div>
+}
+    else
+    {
+        Response.Redirect("/Unauthorized");
+    }
+}
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+        }
+
