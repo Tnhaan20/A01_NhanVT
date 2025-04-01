@@ -7,16 +7,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AS1_BusinessModel;
 using AS1_Repository;
+using Microsoft.AspNetCore.SignalR;
+using NhanVT_MVC.Pages.Hubs;
 
 namespace NhanVT_Assignment1.Pages.ManageAccount
 {
     public class DeleteModel : PageModel
     {
         private readonly IAccountRepository _context;
+        private readonly IHubContext<FunewsHub> _hubContext;
 
-        public DeleteModel(IAccountRepository context)
+        public DeleteModel(IAccountRepository context, IHubContext<FunewsHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
         }
 
         [BindProperty]
@@ -52,7 +56,7 @@ namespace NhanVT_Assignment1.Pages.ManageAccount
             try
             {
             _context.DeleteAccount(id);
-
+                await _hubContext.Clients.All.SendAsync("Change");
             }
             catch (Exception ex) { 
                 ex.ToString();

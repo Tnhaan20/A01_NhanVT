@@ -7,16 +7,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using AS1_BusinessModel;
 using AS1_Repository;
+using Microsoft.AspNetCore.SignalR;
+using NhanVT_MVC.Pages.Hubs;
 
 namespace NhanVT_Assignment1.Pages.ManageAccount
 {
     public class CreateModel : PageModel
     {
         private readonly IAccountRepository _context;
+        private readonly IHubContext<FunewsHub> _hubContext;
 
-        public CreateModel(IAccountRepository context)
+        public CreateModel(IAccountRepository context, IHubContext<FunewsHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
         }
 
         public IActionResult OnGet()
@@ -77,7 +81,8 @@ namespace NhanVT_Assignment1.Pages.ManageAccount
                 SystemAccount.AccountId = (short)(maxId + 1);
 
                 _context.AddAccount(SystemAccount);
-                SuccessMessage = "Account added successfully!";
+                _hubContext.Clients.All.SendAsync("Change");
+
                 return Page();
 
             }

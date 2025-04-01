@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using AS1_BusinessModel;
 using AS1_Repository;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.SignalR;
+using NhanVT_MVC.Pages.Hubs;
 
 namespace NhanVT_Assignment1.Pages.ProfilePage
 {
@@ -14,11 +16,13 @@ namespace NhanVT_Assignment1.Pages.ProfilePage
     {
         private readonly IAccountRepository _accountRepository;
         private readonly INewsArticleRepository _newsRepository;
+        private readonly IHubContext<FunewsHub> _hubContext;
 
-        public IndexModel(IAccountRepository accountRepository, INewsArticleRepository newsRepository)
+        public IndexModel(IAccountRepository accountRepository, INewsArticleRepository newsRepository, IHubContext<FunewsHub> hubContext)
         {
             _accountRepository = accountRepository;
             _newsRepository = newsRepository;
+            _hubContext = hubContext;
         }
 
         [BindProperty]
@@ -96,7 +100,7 @@ namespace NhanVT_Assignment1.Pages.ProfilePage
 
                 // Save changes
                 _accountRepository.UpdateAccount((short)accountId, existingAccount);
-
+                _hubContext.Clients.All.SendAsync("Change");
                 SuccessMessage = "Your profile has been updated successfully!";
 
                 // Refresh the user articles list
